@@ -10,15 +10,6 @@ void combSort(int array[],int n){
   int gap=n;
   int temp;
 
-/*  temp=array[4];
-  array[4]=array[3];
-  array[3]=temp;
-  if(array[3]<array[4])
-    printf("%s\n","asfsfa" );
-  for (int i=0;i<n;i++){
-    printf("%d\n",array[i] );
-  }
-  */
   while(gap!=1){
     gap=getNextGap(gap);
     for(int i=0;i<(n-gap);i++){
@@ -28,8 +19,5 @@ void combSort(int array[],int n){
         array[i]=temp;
       }
     }
-  }
-  for (int i=0;i<n;i++){
-    printf("%d\n",array[i] );
   }
 }
